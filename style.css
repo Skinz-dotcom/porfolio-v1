@@ -1,0 +1,74 @@
+:root {
+    --hero-bg-color: #95AAD5;
+    --bg-color: #EDE8ED;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(209, 198, 210, 0), rgba(237, 232, 237, 0.57)),url("./src/images/hero-img.jpg");
+    background-color: var(--hero-bg-color);
+    height: 56.25em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .btn {
+    font-size: 0.825rem;
+    letter-spacing: 3px;
+
+}
+
+#logo {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 9px;
+    border-radius: 7px;
+    line-height: 1.75rem;
+    letter-spacing: 3px;
+}
+
+.heading {
+    width: 70%;
+    height: 4.125rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14.9vw;
+    position: absolute;
+    top: 190px;
+}
+
+#heading {
+    font-size: 4vw;
+    letter-spacing: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+    #logo {
+        font-size: 1.25rem;
+    }
+
+    .heading {
+        width: 34%;
+        height: 4.125rem;
+    }
+
+    #heading {
+        font-size: 2vw;
+        letter-spacing: 20px;
+    }
+}
